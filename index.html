@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会议全纪要 - AI应用落地×大健康产业模式探讨</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-base-100 min-h-screen">
+    <!-- 导航栏 -->
+    <div class="navbar bg-primary text-primary-content sticky top-0 z-50 shadow-lg">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"></path>
+                    </svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base-content">
+                    <li><a href="#background" onclick="scrollToSection('background')">会议背景</a></li>
+                    <li><a href="#core-content" onclick="scrollToSection('core-content')">核心讨论</a></li>
+                    <li><a href="#cooperation" onclick="scrollToSection('cooperation')">合作模式</a></li>
+                    <li><a href="#actions" onclick="scrollToSection('actions')">后续动作</a></li>
+                </ul>
+            </div>
+            <a class="btn btn-ghost text-xl font-bold">会议纪要</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a href="#background" onclick="scrollToSection('background')">会议背景</a></li>
+                <li><a href="#core-content" onclick="scrollToSection('core-content')">核心讨论</a></li>
+                <li><a href="#cooperation" onclick="scrollToSection('cooperation')">合作模式</a></li>
+                <li><a href="#actions" onclick="scrollToSection('actions')">后续动作</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+            <button class="btn btn-ghost btn-circle" onclick="toggleTheme()">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- 主要内容 -->
+    <main class="container mx-auto px-4 py-8 max-w-6xl">
+        <!-- 会议标题 -->
+        <div class="hero bg-gradient-to-r from-primary to-secondary text-primary-content rounded-lg mb-8 shadow-xl">
+            <div class="hero-content text-center py-12">
+                <div class="max-w-md">
+                    <h1 class="text-4xl font-bold mb-4">会议全纪要</h1>
+                    <p class="text-lg opacity-90">AI应用落地×大健康产业模式×营销与合作机会探讨</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 会议背景 -->
+        <section id="background" class="mb-12">
+            <div class="card bg-base-200 shadow-xl">
+                <div class="card-body">
+                    <h2 class="card-title text-2xl mb-4 flex items-center">
+                        <div class="badge badge-primary badge-lg">01</div>
+                        会议背景
+                    </h2>
+                    <div class="space-y-4">
+                        <div class="alert alert-info">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path>
+                            </svg>
+                            <div>
+                                <h3 class="font-bold">参与方</h3>
+                                <p>易术科技（AI应用研发）、大健康产业从业方及相关合作人</p>
+                            </div>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="card bg-base-100 shadow">
+                                <div class="card-body">
+                                    <h4 class="card-title text-lg">第一部分</h4>
+                                    <p>易术科技产品与商业化路径介绍（AI创业相关探讨）</p>
+                                </div>
+                            </div>
+                            <div class="card bg-base-100 shadow">
+                                <div class="card-body">
+                                    <h4 class="card-title text-lg">第二部分</h4>
+                                    <p>大健康产业模式与AI营销结合的可行性探讨（大健康与AI营销探讨）</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 核心讨论内容 -->
+        <section id="core-content" class="mb-12">
+            <div class="card bg-base-200 shadow-xl">
+                <div class="card-body">
+                    <h2 class="card-title text-2xl mb-6 flex items-center">
+                        <div class="badge badge-secondary badge-lg">02</div>
+                        核心讨论内容
+                    </h2>
+                    
+                    <!-- 易术科技业务与现状 -->
+                    <div class="collapse collapse-plus bg-base-100 mb-4">
+                        <input type="checkbox" class="peer" checked>
+                        <div class="collapse-title text-xl font-medium bg-primary text-primary-content">
+                            易术科技业务与现状
+                        </div>
+                        <div class="collapse-content bg-base-100">
+                            <div class="pt-4 space-y-4">
+                                <div class="stats stats-vertical lg:stats-horizontal shadow w-full">
+                                    <div class="stat">
+                                        <div class="stat-title">定位</div>
+                                        <div class="stat-value text-primary text-lg">AI应用层研发</div>
+                                        <div class="stat-desc">核心产品：会议场景智能助手</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-title">差异化</div>
+                                        <div class="stat-value text-secondary text-lg">实时交互</div>
+                                        <div class="stat-desc">跨场景延伸（音箱、插件、可穿戴设备）</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-title">阶段</div>
+                                        <div class="stat-value text-accent text-lg">研发验证</div>
+                                        <div class="stat-desc">收集行业反馈验证需求</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card bg-gradient-to-r from-info to-info-content text-info-content">
+                                    <div class="card-body">
+                                        <h4 class="card-title">商业化思路</h4>
+                                        <ul class="list-disc list-inside space-y-2">
+                                            <li>不直接与大厂争夺用户基盘，切入细分场景，做API或功能补充</li>
+                                            <li>接受并购可能，但以获取资源赋能为目的</li>
+                                            <li>与政府和行业龙头共建场景（白皮书、试点项目）</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 大健康产业模式要点 -->
+                    <div class="collapse collapse-plus bg-base-100 mb-4">
+                        <input type="checkbox" class="peer">
+                        <div class="collapse-title text-xl font-medium bg-secondary text-secondary-content">
+                            大健康产业模式要点
+                        </div>
+                        <div class="collapse-content bg-base-100">
+                            <div class="pt-4 space-y-4">
+                                <div class="alert alert-success">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <div>
+                                        <h4 class="font-bold">行业规模</h4>
+                                        <p>约29万亿，已超房地产（十几万亿），处于长期增长期</p>
+                                    </div>
+                                </div>
+
+                                <div class="grid md:grid-cols-3 gap-4">
+                                    <div class="card bg-warning text-warning-content">
+                                        <div class="card-body text-center">
+                                            <h4 class="card-title">刚需</h4>
+                                            <p>必需消费品</p>
+                                        </div>
+                                    </div>
+                                    <div class="card bg-error text-error-content">
+                                        <div class="card-body text-center">
+                                            <h4 class="card-title">海量</h4>
+                                            <p>市场容量巨大</p>
+                                        </div>
+                                    </div>
+                                    <div class="card bg-success text-success-content">
+                                        <div class="card-body text-center">
+                                            <h4 class="card-title">高频</h4>
+                                            <p>健康食品、保健品</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card bg-base-300">
+                                    <div class="card-body">
+                                        <h4 class="card-title">商业模式逻辑</h4>
+                                        <div class="grid md:grid-cols-3 gap-4 mt-4">
+                                            <div class="text-center">
+                                                <div class="badge badge-outline badge-lg mb-2">反正钱</div>
+                                                <p class="text-sm">日用消费品，经济波动中也有稳定消费</p>
+                                            </div>
+                                            <div class="text-center">
+                                                <div class="badge badge-outline badge-lg mb-2">反正时间</div>
+                                                <p class="text-sm">可利用业余时间推广，降低参与门槛</p>
+                                            </div>
+                                            <div class="text-center">
+                                                <div class="badge badge-outline badge-lg mb-2">反正人脉</div>
+                                                <p class="text-sm">依托个人关系网传播与转化</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card bg-gradient-to-r from-primary to-secondary text-primary-content">
+                                    <div class="card-body">
+                                        <h4 class="card-title">收益模型</h4>
+                                        <div class="overflow-x-auto">
+                                            <table class="table table-zebra">
+                                                <thead>
+                                                    <tr class="text-primary-content">
+                                                        <th>管道数量</th>
+                                                        <th>年收益</th>
+                                                        <th>参与门槛</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>2条管道</td>
+                                                        <td>≈23万/年</td>
+                                                        <td rowspan="3">70元会员卡开店</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3条管道</td>
+                                                        <td>≈72万/年</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>6条管道</td>
+                                                        <td>≈147万/年</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI与大健康营销的结合点 -->
+                    <div class="collapse collapse-plus bg-base-100">
+                        <input type="checkbox" class="peer">
+                        <div class="collapse-title text-xl font-medium bg-accent text-accent-content">
+                            AI与大健康营销的结合点（易术科技建议）
+                        </div>
+                        <div class="collapse-content bg-base-100">
+                            <div class="pt-4 space-y-4">
+                                <div class="alert alert-warning">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <div>
+                                        <h4 class="font-bold">目标</h4>
+                                        <p>在AI搜索与推荐环境中，提升品牌与产品的可见性和可信度</p>
+                                    </div>
+                                </div>
+
+                                <div class="steps steps-vertical lg:steps-horizontal w-full">
+                                    <div class="step step-primary">关键词布局</div>
+                                    <div class="step step-primary">内容建设</div>
+                                    <div class="step step-primary">权威外链</div>
+                                    <div class="step step-primary">竞争分析</div>
+                                    <div class="step step-primary">数字资产</div>
+                                </div>
+
+                                <div class="grid md:grid-cols-2 gap-4">
+                                    <div class="card bg-info text-info-content">
+                                        <div class="card-body">
+                                            <h4 class="card-title">关键词布局与优化</h4>
+                                            <p>针对核心产品定向布局路径词，使用户搜索相关需求时，优先出现企业信息</p>
+                                        </div>
+                                    </div>
+                                    <div class="card bg-success text-success-content">
+                                        <div class="card-body">
+                                            <h4 class="card-title">AI可识别内容建设</h4>
+                                            <p>按机器语言优化文案，让AI在推荐时准确抓取品牌信息</p>
+                                        </div>
+                                    </div>
+                                    <div class="card bg-warning text-warning-content">
+                                        <div class="card-body">
+                                            <h4 class="card-title">权威外链建设</h4>
+                                            <p>确保AI推荐中附带的官网或落地页链接可直接访问（人民日报、青岛日报等）</p>
+                                        </div>
+                                    </div>
+                                    <div class="card bg-error text-error-content">
+                                        <div class="card-body">
+                                            <h4 class="card-title">竞争对手分析</h4>
+                                            <p>用AI评估行业内其他品牌的关键词使用与内容质量，找到差异化突破口</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 潜在合作模式 -->
+        <section id="cooperation" class="mb-12">
+            <div class="card bg-base-200 shadow-xl">
+                <div class="card-body">
+                    <h2 class="card-title text-2xl mb-4 flex items-center">
+                        <div class="badge badge-accent badge-lg">03</div>
+                        潜在合作模式
+                    </h2>
+                    <div class="alert alert-info">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path>
+                        </svg>
+                        <div>
+                            <p>具体合作模式内容将在后续会议中详细讨论和制定</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 后续动作建议 -->
+        <section id="actions" class="mb-12">
+            <div class="card bg-base-200 shadow-xl">
+                <div class="card-body">
+                    <h2 class="card-title text-2xl mb-6 flex items-center">
+                        <div class="badge badge-warning badge-lg">04</div>
+                        后续动作建议
+                    </h2>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="card bg-primary text-primary-content">
+                            <div class="card-body">
+                                <h3 class="card-title">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                    产品试用与验证
+                                </h3>
+                                <p>在大健康团队中试用会议助手功能，收集场景反馈</p>
+                            </div>
+                        </div>
+
+                        <div class="card bg-secondary text-secondary-content">
+                            <div class="card-body">
+                                <h3 class="card-title">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    关键词与内容优化试点
+                                </h3>
+                                <p>选取健康产业核心关键词，易术科技执行AI可见性优化测试</p>
+                            </div>
+                        </div>
+
+                        <div class="card bg-accent text-accent-content">
+                            <div class="card-body">
+                                <h3 class="card-title">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"></path>
+                                    </svg>
+                                    渠道与代理合作
+                                </h3>
+                                <p>探讨以代理商形式共同开拓AI营销业务在大健康赛道的落地</p>
+                            </div>
+                        </div>
+
+                        <div class="card bg-info text-info-content">
+                            <div class="card-body">
+                                <h3 class="card-title">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    联合品牌建设
+                                </h3>
+                                <p>在权威媒体发联合署名文章，增强品牌信任与AI引用率</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded">
+        <div class="grid grid-flow-col gap-4">
+            <p class="font-semibold">会议纪要生成时间：2025年8月9日</p>
+        </div>
+        <div>
+            <p>Copyright © 2025 - AI应用落地×大健康产业模式探讨会议</p>
+        </div>
+    </footer>
+
+    <script type="module" src="js/script.js"></script>
+</body>
+</html>
